@@ -9,6 +9,7 @@ C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\LearnApp.pdb
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -152,6 +153,7 @@ C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\LearnApp.csproj.C
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\LearnApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\LearnApp.RazorAssemblyInfo.cache
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\LearnApp.RazorAssemblyInfo.cs
+C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\LearnApp.sourcelink.json
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\saraye tel\Desktop\LearnApp\LearnApp\obj\Debug\net8.0\staticwebassets\msbuild.LearnApp.Microsoft.AspNetCore.StaticWebAssets.props
