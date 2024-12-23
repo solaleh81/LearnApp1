@@ -20,9 +20,10 @@ namespace LearnApp.Controllers
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
 
-        public UserController(AppDbContext context)
+        public UserController(AppDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -103,19 +104,24 @@ namespace LearnApp.Controllers
         private string GenerateJwtToken(User user)
         {
 
+            var jwtSettings = _configuration.GetSection("JwtSettings");
+            var secretKey = jwtSettings["SecretKey"];
+            var issuer = jwtSettings["Issuser"];
+            var audience = jwtSettings["Audience"];
+            var expireInMinutesStr = jwtSettings["ExpireInMinutes"];
+       
+
             if (user == null || string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Name) || user.Id == 0)
             {
                 throw new ArgumentException("User object is invalid or missing required properties.");
             }
 
-            var secretKey = "MySuperSecretKey12345!@#$%SecureJWTKey";
             if (string.IsNullOrEmpty(secretKey))
             {
                 throw new InvalidOperationException("JWT SecretKey is not configured.");
             }
 
-            var issuer = "http://localhost";
-            var audience = "API Users";
+
             if (string.IsNullOrEmpty(issuer) || string.IsNullOrEmpty(audience))
             {
                 throw new InvalidOperationException("Issuer or Audience is not configured.");
@@ -132,7 +138,7 @@ namespace LearnApp.Controllers
             new Claim(ClaimTypes.Name, user.Name),
             };
 
-            var expireInMinutesStr = "1";
+            //var expireInMinutesStr = "1";
             if (string.IsNullOrEmpty(expireInMinutesStr))
             {
                 throw new InvalidOperationException("ExpireInMinutes is not configured or is empty.");
